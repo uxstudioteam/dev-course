@@ -4,16 +4,11 @@ Cascading Style Sheets (CSS) allows you to create great-looking web pages.
 
 ## Table of Contents
 
-- [Intro to Cascading Style Sheets](#intro-to-cascading-style-sheets)
-  - [Table of Contents](#table-of-contents)
-  - [Anatomy of a Style Rule](#anatomy-of-a-style-rule)
-  - [CSS Terminology](#css-terminology)
-  - [Three ways of using CSS](#three-ways-of-using-css)
-    - [1. Inline styles](#1-inline-styles)
-    - [2. Internal stylesheet](#2-internal-stylesheet)
-    - [3. External stylesheets](#3-external-stylesheets)
-  - [Media queries](#media-queries)
-  - [Resources](#resources)
+- [Anatomy of a Style Rule](#anatomy-of-a-style-rule)
+- [CSS Terminology](#css-terminology)
+- [Three ways of using CSS](#three-ways-of-using-css)
+- [Media queries](#media-queries)
+- [Resources](#resources)
 
 ## Anatomy of a Style Rule
 
@@ -67,16 +62,22 @@ We have a `<style>` tag inside of the `<head>` tag in the `HTML` file.
 ### 3. External stylesheets
 
 We have the CSS styles in an external `.css` file. We reference that file inside the `<head>` of the `HTML` with a `<link>` tag.
+We can reuse one stylesheet in several files.
 
 ```css
 /* styles.css */
 
-h1 {
-  color: red;
+.ingredients-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.ingredient-item {
+  padding: 8px;
 }
 ```
 ```html
-<!-- index.html -->
+<!-- tiramisu.html -->
 
 <html>
   <head>
@@ -84,7 +85,28 @@ h1 {
   </head>
 
   <body>
-    <h1>Hello Designers!</h1>
+    <h1>Tiramisu</h1>
+    <ul class="ingredients-list">
+      <li class="ingredient-item">Egg yolks</li>
+      <li class="ingredient-item">Mascarpone</li>
+    </ul>
+  </body>
+</html>
+```
+```html
+<!-- lasagne.html -->
+
+<html>
+  <head>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+
+  <body>
+    <h1>Lasagne</h1>
+    <ul class="ingredients-list">
+      <li class="ingredient-item">Pasta</li>
+      <li class="ingredient-item">Tomatoes</li>
+    </ul>
   </body>
 </html>
 ```
