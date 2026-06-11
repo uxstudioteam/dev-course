@@ -163,7 +163,7 @@ Every HTML element will have its layout calculated by a layout algorithm. These 
 
 ## Exercise
 
-What we will build?
+What we will build? 🍰 Tiramisu recipe page
 
 ![Tiramisu recipe CSS exercise](./images/exercise.png)
 
