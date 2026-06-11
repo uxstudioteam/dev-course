@@ -8,6 +8,7 @@ Cascading Style Sheets (CSS) allows you to create great-looking web pages.
 - [CSS Terminology](#css-terminology)
 - [Three ways of using CSS](#three-ways-of-using-css)
 - [Media queries](#media-queries)
+- [Debugging and experimenting in the browser](#debugging-and-experimenting-in-the-browser)
 - [Resources](#resources)
 
 ## Anatomy of a Style Rule
@@ -19,7 +20,7 @@ div {
 }
 ```
 
-![Anatomy of a Style Rule](./anatomy.png)
+![Anatomy of a Style Rule](./images/anatomy.png)
 
 ## CSS Terminology
 
@@ -112,6 +113,26 @@ We can reuse one stylesheet in several files.
 ```
 
 ## Media queries
+
+```css
+@media (condition) {
+  /* Some CSS that'll run if the condition is met. */
+}
+
+/* Typical mobile-first approach */
+p {
+  text-align: center;
+
+  @media (min-width: 756px) {
+    text-align: left;
+  }
+}
+```
+
+## Debugging and experimenting in the browser
+- Accessibility (A11y)
+- Contrast ratio is important
+- Not everyone has good eyesight
 
 ## Resources
 - https://systemfontstack.com/
