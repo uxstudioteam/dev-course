@@ -132,8 +132,9 @@ p {
 }
 ```
 
-## Built-in declarations, cascade
+## Built-in declarations, cascade, specificity
 
+- What to target? Elements, classes, ids, etc.
 - Browser built-in `user-agent stylesheet`
 - How browser's cascade algorithm works
 - CSS Reset
