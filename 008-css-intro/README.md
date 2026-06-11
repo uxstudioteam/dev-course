@@ -8,6 +8,9 @@ Cascading Style Sheets (CSS) allows you to create great-looking web pages.
 - [CSS Terminology](#css-terminology)
 - [Three ways of using CSS](#three-ways-of-using-css)
 - [Media queries](#media-queries)
+- [Built-in declarations, cascade](#built-in-declarations-cascade)
+- [Layout Modes](#layout-modes)
+- [Exercise](#exercise)
 - [Debugging and experimenting in the browser](#debugging-and-experimenting-in-the-browser)
 - [Resources](#resources)
 
@@ -129,11 +132,40 @@ p {
 }
 ```
 
+## Built-in declarations, cascade
+
+- Browser built-in `user-agent stylesheet`
+- How browser's cascade algorithm works
+- CSS Reset
+
+## Layout Modes
+
+Every HTML element will have its layout calculated by a layout algorithm. These are known as “layout modes”, and there are 7 distinct ones.
+
+1. **Flow layout** (the default layout mode)
+2. Flexible Box (aka. Flexbox) layout (basically **Auto Layout** in Figma)
+3. Grid layout (CSS Grid)
+4. Positioned layout (eg. *absolute* or *relative* positioning)
+5. Table layout
+6. Multi-column layout
+7. Float layout
+
+**Block elements**: things like headings, paragraphs, footers, asides. The chunks of content that make up a page.
+
+**Inline elements**: things like links, or a string of bold text. Generally, inline elements are meant to highlight bits of text, or elements within a block container.
+
 ## Debugging and experimenting in the browser
+- You can experiment small tweaks in the browser on the live page
 - Accessibility (A11y)
 - Contrast ratio is important
 - Not everyone has good eyesight
 
+## Exercise
+
+What we will build?
+
+![Tiramisu recipe CSS exercise](./images/exercise.png)
+
 ## Resources
-- https://systemfontstack.com/
-- https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Styling_basics/Getting_started
+- [CSS: Cascading Style Sheets on MDN](https://developer.mozilla.org/en-US/docs/Web/CSS)
+- [A Modern CSS Reset](https://www.joshwcomeau.com/css/custom-css-reset/)
