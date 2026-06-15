@@ -170,3 +170,4 @@ What we will build? 🍰 Tiramisu recipe page
 ## Resources
 - [CSS: Cascading Style Sheets on MDN](https://developer.mozilla.org/en-US/docs/Web/CSS)
 - [A Modern CSS Reset](https://www.joshwcomeau.com/css/custom-css-reset/)
+- [Video recordings](https://drive.google.com/drive/folders/19bdFIfuYOfBda2jQYK1Vz63EKUN57rvQ)
