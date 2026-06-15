@@ -2,28 +2,32 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" <title>Examples</title>
-    <!-- <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Tailwind Example</title>
   </head>
   <body>
-    <main>
+    <main class="p-4">
       <header>
-        <nav>
-          <a href="./tiramisu.html">Tiramisu</a>
-          <a href="./lasagne.html">Lasagne</a>
-          <a href="./tailwind.html">Tailwind</a>
+        <nav class="p-3 flex items-center gap-4 text-blue-500 ">
+          <a href="./tiramisu.html"
+            class="underline underline-offset-4 hover:no-underline hover:text-blue-600">Tiramisu</a>
+          <a href="./lasagne.html"
+            class="underline underline-offset-4 hover:no-underline hover:text-blue-600">Lasagne</a>
+          <a href="./tailwind.html"
+            class="underline underline-offset-4 hover:no-underline hover:text-blue-600">Tailwind</a>
         </nav>
-        <h1>Tailwind example</h1>
-        <ul>
-          <li>Prep: 30 min</li>
-          <li>Chill: 4 hours</li>
-          <li>Serves: 8</li>
-          <li>Easy</li>
+        <h1 class="text-3xl font-black">Tailwind example</h1>
+        <ul class="flex items-center gap-4 my-4">
+          <li class="bg-amber-600 text-white py-1 px-2 rounded-full">Prep: 30 min</li>
+          <li class="bg-amber-600 text-white py-1 px-2 rounded-full">Chill: 4 hours</li>
+          <li class="bg-amber-600 text-white py-1 px-2 rounded-full">Serves: 8</li>
+          <li class="bg-amber-600 text-white py-1 px-2 rounded-full">Easy</li>
         </ul>
       </header>
       <section>
-        <h2>Ingredients</h2>
-        <ul>
+        <h2 class="text-xl font-bold mb-2">Ingredients</h2>
+        <ul class="list-disc pl-6 flex flex-col gap-2">
           <li>6 egg yolks</li>
           <li>150 g (¾ cup) sugar</li>
           <li>500 g mascarpone cheese, room temperature</li>
