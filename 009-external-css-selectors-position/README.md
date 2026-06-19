@@ -64,14 +64,6 @@ Live example:
 - [HTML demo file](./examples/selectors-demo.html)
 - [CSS demo file](./examples/selectors-demo.css)
 
-Additional selector examples:
-
-- `:hover` for interactive states
-- `:first-child` and `:last-child` for items inside a group
-- `::before` and `::after` for generated content
-- `::selection` for selected text
-- combined selectors like `.combined-demo:hover li:first-child::after`
-
 ### Tag selectors
 
 ```css

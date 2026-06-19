@@ -11,28 +11,61 @@
     <style>
       body {
         font-family: Poppins;
+        margin: 0;
+        padding: 32px;
       }
 
       nav {
         display: flex;
-        align-items: center;
+        align-items: flex-start;
+        flex-direction: column;
         gap: 1rem;
       }
 
       a {
         color: inherit;
       }
+
+      main {
+        display: grid;
+        gap: 32px;
+      }
+
+      section {
+        padding: 24px;
+        border: 1px solid #ddd;
+        border-radius: 16px;
+      }
+
+      h1,
+      h2 {
+        margin-top: 0;
+      }
     </style>
     <title>Dev Course</title>
   </head>
   <body>
-    <header>
-      <h1>08 • Intro to CSS</h1>
-      <nav>
-        <a href="paola/index.html">Paola's recipe</a>
-        <a href="reka/index.html">Reka's recipe</a>
-        <a href="janka/index.html">Janka's recipe</a>
-      </nav>
-    </header>
+    <main>
+      <section>
+        <h1>08 • Intro to CSS</h1>
+        <nav>
+          <a href="https://github.com/uxstudioteam/dev-course/blob/main/008-css-intro/README.md">Lesson notes</a>
+          <a href="paola/index.html">Paola's recipe</a>
+          <a href="reka/index.html">Reka's recipe</a>
+          <a href="janka/index.html">Janka's recipe</a>
+        </nav>
+      </section>
+
+      <section>
+        <h2>09 • External CSS, Selectors and Position</h2>
+        <nav>
+          <a href="https://github.com/uxstudioteam/dev-course/blob/main/009-external-css-selectors-position/README.md">Lesson notes</a>
+          <a href="009-external-css-selectors-position/examples/selectors-demo.html">Selectors demo</a>
+          <a href="009-external-css-selectors-position/examples/text-formatting-demo.html">Text formatting demo</a>
+          <a href="009-external-css-selectors-position/examples/box-styling-demo.html">Box styling demo</a>
+          <a href="009-external-css-selectors-position/examples/position-demo.html">Position demo</a>
+        </nav>
+      </section>
+    </main>
   </body>
 </html>
