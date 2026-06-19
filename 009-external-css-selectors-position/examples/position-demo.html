@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Position Demo</title>
+    <link rel="stylesheet" href="./position-demo.css" />
+  </head>
+  <body>
+    <nav class="top-nav">
+      <a href="./selectors-demo.html">Selectors</a>
+      <a href="./text-formatting-demo.html">Text Formatting</a>
+      <a href="./box-styling-demo.html">Box Styling</a>
+      <a href="./position-demo.html">Position</a>
+    </nav>
+
+    <main class="page">
+      <h1>Position Demo</h1>
+
+      <section class="example-card">
+        <p class="example-label">1. static, relative, absolute</p>
+        <div class="demo-stage">
+          <div class="demo-box box-1">Box 1</div>
+          <div class="demo-box box-2">Box 2</div>
+          <div class="demo-box box-3">Box 3</div>
+        </div>
+      </section>
+
+      <section class="example-card">
+        <p class="example-label">2. absolute inside a parent</p>
+        <div class="demo-card">
+          <div class="demo-label">Badge</div>
+          <h2>Recipe Card</h2>
+          <p>
+            This card is useful for demonstrating absolute positioning inside a
+            parent.
+          </p>
+        </div>
+      </section>
+
+      <section class="example-card">
+        <p class="example-label">3. sticky</p>
+        <div class="demo-sticky-wrap">
+          <div class="demo-sticky">Sticky title</div>
+          <p>Scroll down to see how sticky positioning behaves.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <p>Vivamus luctus, nibh sed ullamcorper faucibus, massa est varius dui.</p>
+          <p>Sed non justo vitae mauris placerat egestas.</p>
+          <p>Aliquam erat volutpat. Nulla facilisi.</p>
+          <p>
+            Curabitur feugiat magna sit amet lorem cursus, nec feugiat est
+            vehicula.
+          </p>
+          <p>
+            Praesent euismod, sem in convallis faucibus, nisl velit placerat nibh.
+          </p>
+          <p>
+            Morbi feugiat erat at lorem pellentesque, et malesuada lectus
+            fermentum.
+          </p>
+        </div>
+      </section>
+
+      <section class="example-card">
+        <p class="example-label">4. fixed</p>
+        <button class="demo-fixed-button">Help</button>
+      </section>
+    </main>
+  </body>
+</html>

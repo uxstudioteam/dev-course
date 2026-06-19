@@ -1,0 +1,144 @@
+* {
+  box-sizing: border-box;
+}
+
+body,
+h1,
+p,
+div {
+  margin: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f6f2eb;
+  color: #2f2a25;
+  padding: 32px;
+}
+
+.page {
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+.top-nav {
+  max-width: 760px;
+  margin: 0 auto 24px;
+  padding: 16px 20px;
+  background: white;
+  border: 1px solid #ddd0bf;
+  border-radius: 16px;
+}
+
+.top-nav a {
+  color: #7c3f00;
+  text-decoration: none;
+  font-weight: bold;
+  margin-right: 16px;
+}
+
+.top-nav a:hover {
+  text-decoration: underline;
+}
+
+.page-intro {
+  color: #6f6254;
+  margin-top: 8px;
+  margin-bottom: 24px;
+}
+
+.example-card {
+  background: white;
+  border: 1px solid #ddd0bf;
+  border-radius: 16px;
+  padding: 20px 24px;
+  margin-bottom: 20px;
+}
+
+.example-label {
+  font-size: 14px;
+  font-weight: bold;
+  color: #8a7363;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 12px;
+}
+
+.code-block {
+  margin-top: 16px;
+  padding: 16px;
+  background: #2a2622;
+  color: #f8f4ee;
+  border-radius: 12px;
+  overflow-x: auto;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.demo-box {
+  background: #f3e7d8;
+  color: #4a3624;
+}
+
+.bg-demo {
+  background-color: #e8d5c0;
+  padding: 16px;
+}
+
+.border-demo {
+  padding: 16px;
+  border: 2px solid #c49a6c;
+}
+
+.radius-demo {
+  padding: 16px;
+  border: 2px solid #c49a6c;
+  border-radius: 20px;
+}
+
+.padding-demo {
+  padding: 32px;
+  border: 1px solid #d8cab8;
+}
+
+.margin-stage {
+  background: #fbf6ef;
+  padding: 16px;
+}
+
+.margin-demo {
+  padding: 16px;
+  border: 1px solid #d8cab8;
+  margin-bottom: 24px;
+}
+
+.next-box {
+  padding: 16px;
+  border: 1px solid #d8cab8;
+}
+
+.width-demo {
+  width: 240px;
+  padding: 16px;
+  border: 1px solid #d8cab8;
+}
+
+.max-width-stage {
+  padding: 16px;
+  background: #fbf6ef;
+}
+
+.max-width-demo {
+  max-width: 320px;
+  padding: 16px;
+  border: 1px solid #d8cab8;
+}
+
+.combo-demo {
+  width: 100%;
+  max-width: 420px;
+  background-color: #fff7ec;
+  border: 1px solid #d6b58a;
+  border-radius: 18px;
+  padding: 24px;
+}

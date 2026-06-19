@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Box Styling Demo</title>
+    <link rel="stylesheet" href="./box-styling-demo.css" />
+  </head>
+  <body>
+    <nav class="top-nav">
+      <a href="./selectors-demo.html">Selectors</a>
+      <a href="./text-formatting-demo.html">Text Formatting</a>
+      <a href="./box-styling-demo.html">Box Styling</a>
+      <a href="./position-demo.html">Position</a>
+    </nav>
+
+    <main class="page">
+      <h1>Box Styling Demo</h1>
+
+      <section class="example-card">
+        <p class="example-label">1. background-color</p>
+        <div class="demo-box bg-demo">A box with a background color</div>
+        <pre class="code-block"><code>.bg-demo {
+  background-color: #e8d5c0;
+  padding: 16px;
+}</code></pre>
+      </section>
+
+      <section class="example-card">
+        <p class="example-label">2. border</p>
+        <div class="demo-box border-demo">A box with a visible border</div>
+        <pre class="code-block"><code>.border-demo {
+  padding: 16px;
+  border: 2px solid #c49a6c;
+}</code></pre>
+      </section>
+
+      <section class="example-card">
+        <p class="example-label">3. border-radius</p>
+        <div class="demo-box radius-demo">A box with rounded corners</div>
+        <pre class="code-block"><code>.radius-demo {
+  padding: 16px;
+  border: 2px solid #c49a6c;
+  border-radius: 20px;
+}</code></pre>
+      </section>
+
+      <section class="example-card">
+        <p class="example-label">4. padding</p>
+        <div class="demo-box padding-demo">More space inside the box</div>
+        <pre class="code-block"><code>.padding-demo {
+  padding: 32px;
+  border: 1px solid #d8cab8;
+}</code></pre>
+      </section>
+
+      <section class="example-card">
+        <p class="example-label">5. margin</p>
+        <div class="margin-stage">
+          <div class="demo-box margin-demo">This box has extra outer space below it</div>
+          <div class="demo-box next-box">The gap comes from margin</div>
+        </div>
+        <pre class="code-block"><code>.margin-demo {
+  padding: 16px;
+  border: 1px solid #d8cab8;
+  margin-bottom: 24px;
+}</code></pre>
+      </section>
+
+      <section class="example-card">
+        <p class="example-label">6. width</p>
+        <div class="demo-box width-demo">A fixed-width box</div>
+        <pre class="code-block"><code>.width-demo {
+  width: 240px;
+  padding: 16px;
+  border: 1px solid #d8cab8;
+}</code></pre>
+      </section>
+
+      <section class="example-card">
+        <p class="example-label">7. max-width</p>
+        <div class="max-width-stage">
+          <div class="demo-box max-width-demo">
+            This box can grow, but only up to a maximum width.
+          </div>
+        </div>
+        <pre class="code-block"><code>.max-width-demo {
+  max-width: 320px;
+  padding: 16px;
+  border: 1px solid #d8cab8;
+}</code></pre>
+      </section>
+
+      <section class="example-card">
+        <p class="example-label">8. Combined card styling</p>
+        <div class="demo-box combo-demo">
+          Background, border, radius, padding, and width can be combined to
+          create card-like UI blocks.
+        </div>
+        <pre class="code-block"><code>.combo-demo {
+  width: 100%;
+  max-width: 420px;
+  background-color: #fff7ec;
+  border: 1px solid #d6b58a;
+  border-radius: 18px;
+  padding: 24px;
+}</code></pre>
+      </section>
+    </main>
+  </body>
+</html>

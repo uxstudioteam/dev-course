@@ -1,0 +1,174 @@
+* {
+  box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+p {
+  margin: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f6f2eb;
+  color: #2f2a25;
+  padding: 32px;
+}
+
+.page {
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+.top-nav {
+  max-width: 760px;
+  margin: 0 auto 24px;
+  padding: 16px 20px;
+  background: white;
+  border: 1px solid #ddd0bf;
+  border-radius: 16px;
+}
+
+.top-nav a {
+  color: #7c3f00;
+  text-decoration: none;
+  font-weight: bold;
+  margin-right: 16px;
+}
+
+.top-nav a:hover {
+  text-decoration: underline;
+}
+
+.page-intro {
+  color: #6f6254;
+  margin-top: 8px;
+  margin-bottom: 24px;
+}
+
+.example-card {
+  max-width: 560px;
+  padding: 24px;
+  background: white;
+  border: 1px solid #ddd0bf;
+  border-radius: 16px;
+  margin-bottom: 20px;
+}
+
+.example-label {
+  font-size: 14px;
+  font-weight: bold;
+  color: #8a7363;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 12px;
+}
+
+.code-block {
+  margin-top: 16px;
+  padding: 16px;
+  background: #2a2622;
+  color: #f8f4ee;
+  border-radius: 12px;
+  overflow-x: auto;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.example-card h2,
+.example-card p {
+  margin-top: 12px;
+}
+
+.align-left {
+  text-align: left;
+}
+
+.align-center {
+  text-align: center;
+}
+
+.align-right {
+  text-align: right;
+}
+
+.normal-copy {
+  font-style: normal;
+}
+
+.italic-copy {
+  font-style: italic;
+  color: #8a7363;
+}
+
+.small-copy {
+  font-size: 14px;
+}
+
+.large-copy {
+  font-size: 28px;
+}
+
+.light-copy {
+  font-weight: 400;
+}
+
+.bold-copy {
+  font-weight: 700;
+}
+
+.tight-copy {
+  line-height: 1.2;
+}
+
+.loose-copy {
+  line-height: 1.9;
+}
+
+.sans-copy {
+  font-family: Arial, sans-serif;
+}
+
+.serif-copy {
+  font-family: Georgia, "Times New Roman", serif;
+}
+
+.warm-copy {
+  color: #7c3f00;
+}
+
+.muted-copy {
+  color: #8a7363;
+}
+
+.link-none {
+  text-decoration: none;
+  color: #7c3f00;
+  font-weight: bold;
+}
+
+.link-underline {
+  text-decoration: underline;
+  color: #7c3f00;
+  font-weight: bold;
+}
+
+.link-line-through {
+  text-decoration: line-through;
+  color: #7c3f00;
+  font-weight: bold;
+}
+
+.link-hover-demo {
+  color: #7c3f00;
+  font-weight: bold;
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+  transition: color 0.2s ease, border-color 0.2s ease;
+}
+
+.link-hover-demo:hover {
+  color: #a64b00;
+  border-bottom-color: #a64b00;
+}

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Selectors Demo</title>
+    <link rel="stylesheet" href="./selectors-demo.css" />
+  </head>
+  <body>
+    <nav class="top-nav">
+      <a href="./selectors-demo.html">Selectors</a>
+      <a href="./text-formatting-demo.html">Text Formatting</a>
+      <a href="./box-styling-demo.html">Box Styling</a>
+      <a href="./position-demo.html">Position</a>
+    </nav>
+
+    <main class="page">
+      <h1>Selectors Demo</h1>
+
+      <section class="example-card">
+        <p class="example-label">1. Tag selector</p>
+        <h2>All h2 elements can share one style</h2>
+        <p>This example uses the <code>h2</code> selector.</p>
+        <pre class="code-block"><code>h2 {
+  color: #7c3f00;
+}</code></pre>
+      </section>
+
+      <section class="example-card">
+        <p class="example-label">2. Class selector</p>
+        <p class="highlight-text">
+          This paragraph uses a class, so the style can be reused anywhere.
+        </p>
+        <pre class="code-block"><code>.highlight-text {
+  color: #2a7f62;
+  font-weight: bold;
+}</code></pre>
+      </section>
+
+      <section class="example-card">
+        <p class="example-label">3. ID selector</p>
+        <p id="special-note">
+          This line has one unique id for one specific element.
+        </p>
+        <pre class="code-block"><code>#special-note {
+  letter-spacing: 0.5px;
+  color: #5b7cfa;
+}</code></pre>
+      </section>
+
+      <section class="example-card ingredients-demo">
+        <p class="example-label">4. Descendant selector</p>
+        <h3>Ingredients</h3>
+        <ul>
+          <li>Coffee</li>
+          <li>Mascarpone</li>
+          <li>Ladyfingers</li>
+        </ul>
+        <pre class="code-block"><code>.ingredients-demo li {
+  margin-bottom: 8px;
+}</code></pre>
+      </section>
+
+      <section class="example-card">
+        <p class="example-label">5. Hover pseudo-class</p>
+        <a class="demo-link" href="#">Hover this link</a>
+        <pre class="code-block"><code>.demo-link:hover {
+  text-decoration: underline;
+  color: #a64b00;
+}</code></pre>
+      </section>
+
+      <section class="example-card child-demo">
+        <p class="example-label">6. :first-child and :last-child</p>
+        <ul>
+          <li>First item</li>
+          <li>Middle item</li>
+          <li>Last item</li>
+        </ul>
+        <pre class="code-block"><code>.child-demo li:first-child {
+  color: #7c3f00;
+  font-weight: bold;
+}
+
+.child-demo li:last-child {
+  color: #2a7f62;
+  text-decoration: underline;
+}</code></pre>
+      </section>
+
+      <section class="example-card">
+        <p class="example-label">7. ::before and ::after</p>
+        <p class="generated-text">
+          Generated content can appear before or after an element.
+        </p>
+        <pre class="code-block"><code>.generated-text::before {
+  content: "Before: ";
+}
+
+.generated-text::after {
+  content: " &lt;- After";
+}</code></pre>
+      </section>
+
+      <section class="example-card">
+        <p class="example-label">8. ::selection</p>
+        <p class="selection-demo">
+          Try selecting this sentence in the browser to see how the selection
+          colors can be styled.
+        </p>
+        <pre class="code-block"><code>.selection-demo::selection {
+  background: #111827;
+  color: #ffffff;
+}</code></pre>
+      </section>
+
+      <section class="example-card combined-demo">
+        <p class="example-label">9. Combined selector</p>
+        <p>Move the mouse over this card.</p>
+        <ul>
+          <li>First item</li>
+          <li>Second item</li>
+          <li>Third item</li>
+        </ul>
+        <pre class="code-block"><code>.combined-demo:hover li:first-child::after {
+  content: " &lt;- hovered card + first item + after";
+  color: #d96c6c;
+}</code></pre>
+      </section>
+    </main>
+  </body>
+</html>

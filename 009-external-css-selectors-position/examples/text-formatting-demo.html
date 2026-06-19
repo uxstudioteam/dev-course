@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Text Formatting Demo</title>
+    <link rel="stylesheet" href="./text-formatting-demo.css" />
+  </head>
+  <body>
+    <nav class="top-nav">
+      <a href="./selectors-demo.html">Selectors</a>
+      <a href="./text-formatting-demo.html">Text Formatting</a>
+      <a href="./box-styling-demo.html">Box Styling</a>
+      <a href="./position-demo.html">Position</a>
+    </nav>
+
+    <main class="page">
+      <h1>Text Formatting Demo</h1>
+
+      <section class="example-card">
+        <p class="example-label">1. text-align: left</p>
+        <h2 class="align-left">Classic Tiramisu</h2>
+        <p>This heading is aligned to the left.</p>
+        <pre class="code-block"><code>.align-left {
+  text-align: left;
+}</code></pre>
+      </section>
+
+      <section class="example-card">
+        <p class="example-label">2. text-align: center</p>
+        <h2 class="align-center">Classic Tiramisu</h2>
+        <p>This heading is aligned to the center.</p>
+        <pre class="code-block"><code>.align-center {
+  text-align: center;
+}</code></pre>
+      </section>
+
+      <section class="example-card">
+        <p class="example-label">3. text-align: right</p>
+        <h2 class="align-right">Classic Tiramisu</h2>
+        <p>This heading is aligned to the right.</p>
+        <pre class="code-block"><code>.align-right {
+  text-align: right;
+}</code></pre>
+      </section>
+
+      <section class="example-card">
+        <p class="example-label">4. font-style</p>
+        <p class="normal-copy">This text uses the normal font style.</p>
+        <p class="italic-copy">This text uses italic.</p>
+        <pre class="code-block"><code>.normal-copy {
+  font-style: normal;
+}
+
+.italic-copy {
+  font-style: italic;
+}</code></pre>
+      </section>
+
+      <section class="example-card">
+        <p class="example-label">5. font-size</p>
+        <p class="small-copy">This text is smaller.</p>
+        <p class="large-copy">This text is larger.</p>
+        <pre class="code-block"><code>.small-copy {
+  font-size: 14px;
+}
+
+.large-copy {
+  font-size: 28px;
+}</code></pre>
+      </section>
+
+      <section class="example-card">
+        <p class="example-label">6. font-weight</p>
+        <p class="light-copy">This text is lighter.</p>
+        <p class="bold-copy">This text is bolder.</p>
+        <pre class="code-block"><code>.light-copy {
+  font-weight: 400;
+}
+
+.bold-copy {
+  font-weight: 700;
+}</code></pre>
+      </section>
+
+      <section class="example-card">
+        <p class="example-label">7. line-height</p>
+        <p class="tight-copy">
+          This paragraph uses a tighter line height. Tiramisu is a layered
+          Italian dessert made with mascarpone, coffee, and ladyfingers.
+        </p>
+        <p class="loose-copy">
+          This paragraph uses a looser line height. Tiramisu is a layered
+          Italian dessert made with mascarpone, coffee, and ladyfingers.
+        </p>
+        <pre class="code-block"><code>.tight-copy {
+  line-height: 1.2;
+}
+
+.loose-copy {
+  line-height: 1.9;
+}</code></pre>
+      </section>
+
+      <section class="example-card">
+        <p class="example-label">8. font-family</p>
+        <p class="sans-copy">This text uses a sans-serif font.</p>
+        <p class="serif-copy">This text uses a serif font.</p>
+        <pre class="code-block"><code>.sans-copy {
+  font-family: Arial, sans-serif;
+}
+
+.serif-copy {
+  font-family: Georgia, "Times New Roman", serif;
+}</code></pre>
+      </section>
+
+      <section class="example-card">
+        <p class="example-label">9. color</p>
+        <p class="warm-copy">This text uses a warm brown color.</p>
+        <p class="muted-copy">This text uses a muted secondary color.</p>
+        <pre class="code-block"><code>.warm-copy {
+  color: #7c3f00;
+}
+
+.muted-copy {
+  color: #8a7363;
+}</code></pre>
+      </section>
+
+      <section class="example-card">
+        <p class="example-label">10. text-decoration on links</p>
+        <p>
+          <a class="link-none" href="#">No underline</a>
+        </p>
+        <p>
+          <a class="link-underline" href="#">Underline</a>
+        </p>
+        <p>
+          <a class="link-line-through" href="#">Line through</a>
+        </p>
+        <pre class="code-block"><code>.link-none {
+  text-decoration: none;
+}
+
+.link-underline {
+  text-decoration: underline;
+}
+
+.link-line-through {
+  text-decoration: line-through;
+}</code></pre>
+      </section>
+
+      <section class="example-card">
+        <p class="example-label">11. text-decoration with hover</p>
+        <p>
+          <a class="link-hover-demo" href="#">Hover this recipe link</a>
+        </p>
+        <pre class="code-block"><code>.link-hover-demo {
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+}
+
+.link-hover-demo:hover {
+  border-bottom-color: #a64b00;
+}</code></pre>
+      </section>
+    </main>
+  </body>
+</html>
