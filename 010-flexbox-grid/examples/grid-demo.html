@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid Demo</title>
+    <link rel="stylesheet" href="./grid-demo.css" />
+  </head>
+  <body>
+    <nav class="top-nav">
+      <a href="./flexbox-demo.html">Flexbox</a>
+      <a href="./grid-demo.html">Grid</a>
+    </nav>
+
+    <main class="page">
+      <h1>Grid Demo</h1>
+
+      <section class="example-card">
+        <p class="example-label">1. Three equal columns</p>
+        <p class="example-copy">Each column gets an equal share of the available space.</p>
+        <div class="demo-grid equal-grid">
+          <div class="grid-item">1</div>
+          <div class="grid-item">2</div>
+          <div class="grid-item">3</div>
+        </div>
+        <pre class="code-block"><code>.equal-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}</code></pre>
+      </section>
+
+      <section class="example-card">
+        <p class="example-label">2. Fixed columns</p>
+        <p class="example-copy">Each column keeps an exact fixed width in pixels.</p>
+        <div class="demo-grid fixed-grid">
+          <div class="grid-item">200px</div>
+          <div class="grid-item">200px</div>
+          <div class="grid-item">200px</div>
+        </div>
+        <pre class="code-block"><code>.fixed-grid {
+  display: grid;
+  grid-template-columns: 200px 200px 200px;
+}</code></pre>
+      </section>
+
+      <section class="example-card">
+        <p class="example-label">3. Percentage columns</p>
+        <p class="example-copy">Each column takes a percentage of the container width.</p>
+        <div class="demo-grid percent-grid">
+          <div class="grid-item">20%</div>
+          <div class="grid-item">40%</div>
+          <div class="grid-item">40%</div>
+        </div>
+        <pre class="code-block"><code>.percent-grid {
+  display: grid;
+  grid-template-columns: 20% 40% 40%;
+}</code></pre>
+      </section>
+
+      <section class="example-card">
+        <p class="example-label">4. Fixed plus flexible</p>
+        <p class="example-copy">One column stays fixed while the other stretches to fill the rest.</p>
+        <div class="demo-grid mixed-grid">
+          <div class="grid-item">240px</div>
+          <div class="grid-item">1fr</div>
+        </div>
+        <pre class="code-block"><code>.mixed-grid {
+  display: grid;
+  grid-template-columns: 240px 1fr;
+}</code></pre>
+      </section>
+
+      <section class="example-card">
+        <p class="example-label">5. repeat(...)</p>
+        <p class="example-copy">`repeat()` is a shorter way to write the same column pattern several times.</p>
+        <div class="demo-grid repeat-grid">
+          <div class="grid-item">1</div>
+          <div class="grid-item">2</div>
+          <div class="grid-item">3</div>
+          <div class="grid-item">4</div>
+        </div>
+        <pre class="code-block"><code>.repeat-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}</code></pre>
+      </section>
+
+      <section class="example-card">
+        <p class="example-label">6. minmax(...)</p>
+        <p class="example-copy">Each column has a minimum size but can still grow when more space is available.</p>
+        <div class="demo-grid minmax-grid">
+          <div class="grid-item">Card 1</div>
+          <div class="grid-item">Card 2</div>
+          <div class="grid-item">Card 3</div>
+          <div class="grid-item">Card 4</div>
+        </div>
+        <pre class="code-block"><code>.minmax-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(120px, 1fr));
+}</code></pre>
+      </section>
+
+      <section class="example-card">
+        <p class="example-label">7. gap</p>
+        <p class="example-copy">Gap creates spacing between grid cells.</p>
+        <div class="demo-grid gap-grid">
+          <div class="grid-item">1</div>
+          <div class="grid-item">2</div>
+          <div class="grid-item">3</div>
+          <div class="grid-item">4</div>
+        </div>
+        <pre class="code-block"><code>.gap-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}</code></pre>
+      </section>
+
+      <section class="example-card">
+        <p class="example-label">8. Item spanning</p>
+        <p class="example-copy">One item can span across more than one column.</p>
+        <div class="demo-grid span-grid">
+          <div class="grid-item span-wide">Wide</div>
+          <div class="grid-item">2</div>
+          <div class="grid-item">3</div>
+          <div class="grid-item">4</div>
+        </div>
+        <pre class="code-block"><code>.span-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.span-wide {
+  grid-column: span 2;
+}</code></pre>
+      </section>
+
+      <section class="example-card">
+        <p class="example-label">9. Dashboard layout</p>
+        <p class="example-copy">Grid works well when one featured block sits beside smaller supporting blocks.</p>
+        <div class="demo-grid dashboard-grid">
+          <div class="grid-item hero-card">Hero</div>
+          <div class="grid-item">Side 1</div>
+          <div class="grid-item">Side 2</div>
+          <div class="grid-item">Card 4</div>
+          <div class="grid-item">Card 5</div>
+        </div>
+        <pre class="code-block"><code>.dashboard-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.hero-card {
+  grid-column: span 2;
+  grid-row: span 2;
+}</code></pre>
+      </section>
+
+      <section class="example-card">
+        <p class="example-label">10. Different heights in one row</p>
+        <p class="example-copy">The row becomes as tall as the tallest item inside that row.</p>
+        <div class="demo-grid row-height-grid">
+          <div class="grid-item">Short card</div>
+          <div class="grid-item tall-card">
+            Taller card with more content. Taller card with more content. Taller
+            card with more content.
+          </div>
+          <div class="grid-item">Short card</div>
+        </div>
+        <pre class="code-block"><code>.row-height-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.tall-card {
+  min-height: 220px;
+}</code></pre>
+      </section>
+
+      <section class="example-card">
+        <p class="example-label">11. Responsive grid layout</p>
+        <p class="example-copy">This grid changes from three columns to one column on smaller screens.</p>
+        <div class="demo-grid responsive-grid-demo">
+          <div class="grid-item">Card 1</div>
+          <div class="grid-item">Card 2</div>
+          <div class="grid-item">Card 3</div>
+        </div>
+        <pre class="code-block"><code>.responsive-grid-demo {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+@media (max-width: 700px) {
+  .responsive-grid-demo {
+    grid-template-columns: 1fr;
+  }
+}</code></pre>
+      </section>
+
+      <section class="example-card">
+        <p class="example-label">12. Playground</p>
+        <div class="demo-grid exercise-grid">
+          <div class="grid-item exercise-feature">Feature</div>
+          <div class="grid-item">Card 2</div>
+          <div class="grid-item">Card 3</div>
+          <div class="grid-item">Card 4</div>
+          <div class="grid-item">Card 5</div>
+          <div class="grid-item">Card 6</div>
+          <div class="grid-item">Card 7</div>
+          <div class="grid-item">Card 8</div>
+          <div class="grid-item">Card 9</div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

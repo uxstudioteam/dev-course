@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexbox Demo</title>
+    <link rel="stylesheet" href="./flexbox-demo.css" />
+  </head>
+  <body>
+    <nav class="top-nav">
+      <a href="./flexbox-demo.html">Flexbox</a>
+      <a href="./grid-demo.html">Grid</a>
+    </nav>
+
+    <main class="page">
+      <h1>Flexbox Demo</h1>
+
+      <section class="example-card">
+        <p class="example-label">1. Row direction</p>
+        <p class="example-copy">Items sit next to each other from left to right.</p>
+        <div class="demo-flex row-demo">
+          <div class="demo-item">A</div>
+          <div class="demo-item">B</div>
+          <div class="demo-item">C</div>
+        </div>
+        <pre class="code-block"><code>.row-demo {
+  display: flex;
+  flex-direction: row;
+}</code></pre>
+      </section>
+
+      <section class="example-card">
+        <p class="example-label">2. Column direction</p>
+        <p class="example-copy">Items stack from top to bottom.</p>
+        <div class="demo-flex column-demo">
+          <div class="demo-item">A</div>
+          <div class="demo-item">B</div>
+          <div class="demo-item">C</div>
+        </div>
+        <pre class="code-block"><code>.column-demo {
+  display: flex;
+  flex-direction: column;
+}</code></pre>
+      </section>
+
+      <section class="example-card">
+        <p class="example-label">3. justify-content</p>
+        <p class="example-copy">This controls distribution along the main axis.</p>
+        <div class="demo-flex justify-demo">
+          <div class="demo-item">A</div>
+          <div class="demo-item">B</div>
+          <div class="demo-item">C</div>
+        </div>
+        <pre class="code-block"><code>.justify-demo {
+  display: flex;
+  justify-content: space-between;
+}</code></pre>
+      </section>
+
+      <section class="example-card">
+        <p class="example-label">4. align-items</p>
+        <p class="example-copy">This controls alignment on the cross axis.</p>
+        <div class="demo-flex align-demo">
+          <div class="demo-item small-item">A</div>
+          <div class="demo-item medium-item">B</div>
+          <div class="demo-item large-item">C</div>
+        </div>
+        <pre class="code-block"><code>.align-demo {
+  display: flex;
+  align-items: center;
+}</code></pre>
+      </section>
+
+      <section class="example-card">
+        <p class="example-label">5. gap</p>
+        <p class="example-copy">Gap adds space between items without using margins on the children.</p>
+        <div class="demo-flex gap-demo">
+          <div class="demo-item">A</div>
+          <div class="demo-item">B</div>
+          <div class="demo-item">C</div>
+        </div>
+        <pre class="code-block"><code>.gap-demo {
+  display: flex;
+  gap: 24px;
+}</code></pre>
+      </section>
+
+      <section class="example-card">
+        <p class="example-label">6. flex-wrap</p>
+        <p class="example-copy">Items can move onto a new line when there is not enough room.</p>
+        <div class="demo-flex wrap-demo">
+          <div class="demo-item">Tag 1</div>
+          <div class="demo-item">Tag 2</div>
+          <div class="demo-item">Tag 3</div>
+          <div class="demo-item">Tag 4</div>
+          <div class="demo-item">Tag 5</div>
+          <div class="demo-item">Tag 6</div>
+        </div>
+        <pre class="code-block"><code>.wrap-demo {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}</code></pre>
+      </section>
+
+      <section class="example-card">
+        <p class="example-label">7. flex-grow</p>
+        <p class="example-copy">One item can expand and take the remaining available space.</p>
+        <div class="demo-flex grow-demo">
+          <div class="demo-item">Logo</div>
+          <div class="demo-item grow-item">Search area grows</div>
+          <div class="demo-item">Button</div>
+        </div>
+        <pre class="code-block"><code>.grow-demo {
+  display: flex;
+  gap: 12px;
+}
+
+.grow-item {
+  flex-grow: 1;
+}</code></pre>
+      </section>
+
+      <section class="example-card">
+        <p class="example-label">8. Figma-like header</p>
+        <p class="example-copy">This behaves like a horizontal Auto Layout frame in Figma.</p>
+        <header class="ui-header">
+          <div class="brand">Studio</div>
+          <nav class="ui-nav">
+            <a href="#">Work</a>
+            <a href="#">Services</a>
+            <a href="#">About</a>
+          </nav>
+          <button class="ui-button">Contact</button>
+        </header>
+        <pre class="code-block"><code>.ui-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+}</code></pre>
+      </section>
+
+      <section class="example-card">
+        <p class="example-label">9. Responsive flex layout</p>
+        <p class="example-copy">This row becomes a column on smaller screens.</p>
+        <div class="demo-flex responsive-flex-demo">
+          <div class="demo-item responsive-item">Image</div>
+          <div class="demo-item responsive-item">Content</div>
+          <div class="demo-item responsive-item">Actions</div>
+        </div>
+        <pre class="code-block"><code>.responsive-flex-demo {
+  display: flex;
+  gap: 16px;
+}
+
+.responsive-item {
+  flex: 1;
+}
+
+@media (max-width: 700px) {
+  .responsive-flex-demo {
+    flex-direction: column;
+  }
+}</code></pre>
+      </section>
+
+      <section class="example-card">
+        <p class="example-label">10. Playground</p>
+        <p class="example-copy">Try `display: flex`, `gap`, `justify-content`, and `align-items` here.</p>
+        <div class="exercise-flex">
+          <div class="exercise-card">Card 1</div>
+          <div class="exercise-card">Card 2</div>
+          <div class="exercise-card">Card 3</div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
