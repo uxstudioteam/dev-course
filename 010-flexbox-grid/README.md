@@ -5,7 +5,7 @@ This chapter introduces the two most important modern CSS layout systems:
 - `Flexbox` for one-dimensional layout
 - `Grid` for two-dimensional layout
 
-For designers working in Figma, Flexbox is very close to Auto Layout. Grid is closer to page structure, layout grids, galleries, and dashboards.
+These layout systems are important because most modern interfaces are built with them. They help arrange content, control spacing, and create responsive layouts that adapt to different screen sizes.
 
 ## Table of Contents
 
