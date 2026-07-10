@@ -1,8 +1,6 @@
 # Interaction States and Motion
 
-This chapter introduces interaction states and motion from a designer's point of view.
-
-The goal is not to memorize CSS syntax. The goal is to understand:
+This chapter introduces interaction states and motion. The goal is not to memorize CSS syntax. The goal is to understand:
 
 - what state changes exist
 - how to describe them clearly to an AI agent
