@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interaction States Demo</title>
+    <link rel="stylesheet" href="./states-demo.css">
+  </head>
+  <body>
+    <main class="page">
+      <section class="panel">
+        <p class="eyebrow">Course 12 demo</p>
+        <h1>Interaction states</h1>
+        <p class="intro">
+          Test these controls with a mouse, then press Tab to check the keyboard focus state.
+        </p>
+
+        <div class="actions">
+          <a class="button primary-button" href="#">Start project</a>
+          <a class="button secondary-button" href="#">View details</a>
+        </div>
+
+        <nav class="product-nav" aria-label="Product navigation demo">
+          <button class="nav-button hover-flip-text" data-text="Home">
+            <span>Home</span>
+          </button>
+          <button class="nav-button hover-flip-text" data-text="Work">
+            <span>Work</span>
+          </button>
+          <button class="nav-button hover-flip-text" data-text="Contact">
+            <span>Contact</span>
+          </button>
+        </nav>
+
+        <article class="project-card" tabindex="0">
+          <div>
+            <p class="card-label">Prototype review</p>
+            <h2>Checkout flow polish</h2>
+          </div>
+          <span class="status">Ready</span>
+        </article>
+
+        <section class="code-panel" aria-labelledby="states-css-title">
+          <h2 id="states-css-title">CSS used in this demo</h2>
+          <pre><code>.primary-button:hover {
+  background: #263fa8;
+  transform: translateY(-2px);
+}
+
+.primary-button:active {
+  transform: translateY(1px) scale(0.98);
+}
+
+.button:focus-visible,
+.project-card:focus-visible,
+.nav-button:focus-visible {
+  outline: 3px solid #f6b73c;
+  outline-offset: 4px;
+}
+
+.hover-flip-text::after {
+  content: attr(data-text);
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  transform: translateY(100%);
+}
+
+.hover-flip-text span,
+.hover-flip-text::after {
+  transition-property: transform;
+  transition-duration: .3s;
+  transition-timing-function: cubic-bezier(.22, .61, .36, 1);
+  will-change: transform;
+}
+
+.hover-flip-text:hover span,
+.hover-flip-text:focus-visible span {
+  transform: translateY(-200%);
+}
+
+.hover-flip-text:hover::after,
+.hover-flip-text:focus-visible::after {
+  transform: translateY(0);
+}</code></pre>
+        </section>
+      </section>
+    </main>
+  </body>
+</html>
