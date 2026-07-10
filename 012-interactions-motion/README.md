@@ -29,19 +29,19 @@ The normal resting state.
 
 This is what the user sees before interacting with the element.
 
-### Hover
+### Hover `:hover`
 
 The pointer is over the element.
 
 Use hover to show that something can be clicked, opened, selected, dragged, or inspected.
 
-### Active
+### Active `:active`
 
 The element is currently being pressed.
 
 Use active to give a small physical response: a button compresses, a card feels selected, or a control acknowledges the click.
 
-### Focus
+### Focus `:focus`
 
 The element is selected by keyboard navigation or programmatic focus.
 
